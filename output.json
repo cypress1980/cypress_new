@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-23T13:59:06.456Z",
-    "end": "2021-03-23T13:59:12.160Z",
-    "duration": 3813,
+    "start": "2021-03-23T14:30:04.692Z",
+    "end": "2021-03-23T14:30:09.498Z",
+    "duration": 3352,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ff44d87a-3b0f-4e9f-8747-06b5aea081df",
+      "uuid": "c677275c-9079-44d3-a0c3-fb361ef13227",
       "title": "",
       "fullFile": "cypress/integration/examples/viewport.spec.js",
       "file": "cypress/integration/examples/viewport.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1cbcc45e-97f2-4fc7-b421-22b90ea613b9",
+          "uuid": "f378262e-81d9-49ef-8774-c0bfaa5500fa",
           "title": "Viewport",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "cy.viewport() - set the viewport size and dimension",
               "fullTitle": "Viewport cy.viewport() - set the viewport size and dimension",
               "timedOut": null,
-              "duration": 3813,
+              "duration": 3352,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// https://on.cypress.io/viewport\ncy.get('#navbar').should('be.visible');\ncy.viewport(320, 480); // the navbar should have collapse since our screen is smaller\ncy.get('#navbar').should('not.be.visible');\ncy.get('.navbar-toggle').should('be.visible').click();\ncy.get('.nav').find('a').should('be.visible'); // lets see what our app looks like on a super large screen\ncy.viewport(2999, 2999); // cy.viewport() accepts a set of preset sizes\n// to easily set the screen to a device's width and height\n// We added a cy.wait() between each viewport change so you can see\n// the change otherwise it is a little too fast to see :)\ncy.viewport('macbook-15');\ncy.wait(200);\ncy.viewport('macbook-13');\ncy.wait(200);\ncy.viewport('macbook-11');\ncy.wait(200);\ncy.viewport('ipad-2');\ncy.wait(200);\ncy.viewport('ipad-mini');\ncy.wait(200);\ncy.viewport('iphone-6+');\ncy.wait(200);\ncy.viewport('iphone-6');\ncy.wait(200);\ncy.viewport('iphone-5');\ncy.wait(200);\ncy.viewport('iphone-4');\ncy.wait(200);\ncy.viewport('iphone-3');\ncy.wait(200); // cy.viewport() accepts an orientation for all presets\n// the default orientation is 'portrait'\ncy.viewport('ipad-2', 'portrait');\ncy.wait(200);\ncy.viewport('iphone-4', 'landscape');\ncy.wait(200); // The viewport will be reset back to the default dimensions\n// in between tests (the  default can be set in cypress.json)",
               "err": {},
-              "uuid": "c5a97324-944a-45fd-acab-e62676637504",
-              "parentUUID": "1cbcc45e-97f2-4fc7-b421-22b90ea613b9",
+              "uuid": "18e64db3-9891-4410-bd1a-fd7b9bad2022",
+              "parentUUID": "f378262e-81d9-49ef-8774-c0bfaa5500fa",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c5a97324-944a-45fd-acab-e62676637504"
+            "18e64db3-9891-4410-bd1a-fd7b9bad2022"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3813,
+          "duration": 3352,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
