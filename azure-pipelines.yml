@@ -22,3 +22,4 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run test'
+    ContinueOnError: true
