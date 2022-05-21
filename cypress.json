@@ -6,7 +6,6 @@
     "html": false,
     "json": true,
     "timestamp": "mmddyyyy_HHMMss"
-     "mochaFile": "tests/test-output-[hash].xml"
   },
   "projectId": "y1sg2j"
 }
