@@ -7,5 +7,8 @@
     "json": true,
     "timestamp": "mmddyyyy_HHMMss"
   },
+  "mochaJunitReporterReporterOptions": {
+      "mochaFile": "cypress/reports/junit/results-[hash].xml"
+    }
   "projectId": "y1sg2j"
 }
