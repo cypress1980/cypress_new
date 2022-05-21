@@ -1,7 +1,12 @@
 {
   "reporter": "junit",
   "reporterOptions": {
-    "mochaFile": "results/my-test-output.xml",
+    "mochaFile": "cypress/reports/my-test-output.xml",
+    "reportDir": "cypress/reports/mochawesome-report",
+    "overwrite": false,
+    "html": false,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
     "toConsole": true
   },
   "projectId": "y1sg2j"
