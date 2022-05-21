@@ -1,7 +1,7 @@
 {
-  "reporter": "mochawesome",
+  "reporter": "junit",
   "reporterOptions": {
-    "reportDir": "cypress/reports/mochawesome-report",
+    "reportDir": "cypress/reports/mochawesome-report.xml",
     "overwrite": false,
     "html": false,
     "json": true,
