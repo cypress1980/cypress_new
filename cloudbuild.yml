@@ -7,9 +7,8 @@ steps:
   args: ['sleep', '20']
 - name: 'bash'
   args: ['ls']
-- name: 'maven'
-  entrypoint: 'mvn'
-  args: ['test', '-P', 'parallel']
-  env:
-  - 'LT_USERNAME=${_LT_USERNAME}'
-  - 'LT_ACCESS_KEY=${_LT_ACCESS_KEY}'
+- name: 'cypress'
+  entrypoint: 'yarn'
+  args: ['run', 'vue-cli-service', 'test:integration', '--headless']
+    env:
+    - 'CYPRESS_CACHE_FOLDER=/workspace/.tmp/Cypress'
