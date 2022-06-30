@@ -9,6 +9,6 @@ steps:
   args: ['ls']
 - name: 'cypress'
   entrypoint: 'yarn'
-  args: ['run', 'vue-cli-service', 'test:integration', '--headless']
+  args: ['install']
     env:
     - 'CYPRESS_CACHE_FOLDER=/workspace/.tmp/Cypress'
