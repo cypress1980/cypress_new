@@ -9,8 +9,7 @@ steps:
 
   # run cypress
   - id: yarn run cypress
-    name: cypress/included:7.0.1
     entrypoint: yarn
-    args: ['run', 'vue-cli-service', 'test:integration', '--headless']
+    args: ['run','test:integration', '--headless']
     env:
     - 'CYPRESS_CACHE_FOLDER=/workspace/.tmp/Cypress'
