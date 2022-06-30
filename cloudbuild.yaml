@@ -7,9 +7,10 @@ steps:
     env:
     - 'CYPRESS_CACHE_FOLDER=/workspace/.tmp/Cypress'
 
-  # run cypress
-  - id: yarn run cypress
+ # run cypress
+  - id: run-cypress
+    name: cypress/included:7.0.1
     entrypoint: yarn
-    args: ['run','test:integration', '--headless']
+    args: ['run','test:e2e','--headless']
     env:
     - 'CYPRESS_CACHE_FOLDER=/workspace/.tmp/Cypress'
