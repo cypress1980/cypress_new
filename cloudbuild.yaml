@@ -11,6 +11,6 @@ steps:
   - id: run-cypress
     name: cypress/included:7.0.1
     entrypoint: yarn
-    args: ['run','test:integration','--headless']
+    args: ['run','cypress:integration','--headless']
     env:
     - 'CYPRESS_CACHE_FOLDER=/workspace/.tmp/Cypress'
